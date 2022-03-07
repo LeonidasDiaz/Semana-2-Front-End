@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos compuestos</title>
+    <style>
+        
+        
+        form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  
+  
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  
+  font: 1em sans-serif;
+
+  
+  width: 300px;
+  box-sizing: border-box;
+
+ 
+}
+
+
+
+
+
+
+        
+        
+
+ul.clase2{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+body{
+  
+  
+  margin-top: 60px;
+  background-image: url(back/back.jpg)
+;
+
+ 
+ 
+}
+   
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+        
+        </style>
+        </head>
+</head>
+<body>
+
+    <ul class="clase2" >
+        <li><a class="active" href="Pagina principal.html">Inicio</a></li>
+      
+      
+      
+      
+    
+    <li style="float:right"><a class="active" href="formulario.html">pedidos</a></li>
+    </ul>
+    
+<br>
+
+<form action="/my-handling-form-page" method="post">
+    <ul>
+
+     <li>
+       <label for="name">Nombre:</label>
+       <input type="text" id="name" name="user_name" />
+     </li>
+
+     <li>
+       <label for="mail">Correo electrónico:</label>
+       <input type="email" id="mail" name="user_email" />
+     </li>
+
+     <li>
+       <label for="text">Describa como quiere su pastel</label><br>
+       <textarea id="text" name="user_message"></textarea>
+     </li>
+
+     <li>
+      <label for="text">Numero de telefono</label><br>
+      <input type="number" id="text" name="Numero"><br><br>
+     </li>
+
+     <li>
+      <label for="text">Fecha de entrega</label><br>
+      <input type="number" id="text" name="Numero"><br><br>
+     </li>
+
+
+     <h2>Agregar cafe</h2>
+    <label for="cafe">Selecione su cafe</label>
+    <select id="cafe" name="cafe">
+      <option value="Cafe frio">no deseo</option>
+        <option value="Cafe frio">Cafe frio</option>
+        <option value="cafe-espresso">cafe-espresso</option>
+        <option value="capuchino">capuchino</option>
+        <option value="frappe de oreo">frappe de oreo</option>
+        <option value="Frappe">Frappe</option>
+        <option value="machiato">machiato</option>
+
+
+    </select>
+
+    <h2>Agregar un pan</h2>
+    <label for="pan">Selecione un pan</label>
+    <select id="pan" name="pan">
+      <option value="Cafe frio">no deseo</option>
+        <option value="Cafe frio">Concha</option>
+        <option value="cafe-espresso">Dona</option>
+        <option value="capuchino">Pan de elote</option>
+        <option value="frappe de oreo">Piedra</option>
+        <option value="Frappe">Polvoron</option>
+        <option value="machiato">Puerquitos</option>
+
+
+    </select>
+     
+   
+    
+    <br><br>
+   
+    
+    
+    
+    
+    <form action="/accion.js" id="form1" method="post">
+        
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    
+    
+    
+   
+   
+    
+    
+
+    
+</body>
+</html>
